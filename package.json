@@ -1,0 +1,22 @@
+{
+  "name": "bayer-recon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bayer 马赛克双线性重建与采样来源后端（TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/src/server.js",
+    "dev": "node --experimental-strip-types --no-warnings src/server.ts",
+    "cli": "node --experimental-strip-types --no-warnings src/cli.ts",
+    "test": "node --experimental-strip-types --no-warnings --test tests/",
+    "demo": "node --experimental-strip-types --no-warnings src/cli.ts demo"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
